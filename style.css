@@ -1,0 +1,87 @@
+/* ---------------- BODY & HEADINGS ---------------- */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* ---------------- CONTROLS ---------------- */
+.controls {
+    margin: 20px;
+}
+
+select, button {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+select {
+    background-color: #d0dded;
+    color: #2b4c7e;
+    border: 1px solid #bfd2f4;
+    border-radius: 6px;
+}
+
+/* ---------------- ARRAY CONTAINER ---------------- */
+#array-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* ---------------- CIRCLE STYLE ---------------- */
+.circle {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: steelblue;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Active (compare) */
+.circle.active {
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* Swap animation */
+.circle.swap {
+    transform: scale(1.2);
+}
+
+/* ---------------- SPEED CONTROL ---------------- */
+.speed-control {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.speed-control label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.speed-control input[type="range"] {
+    cursor: pointer;
+    accent-color: #e1c250; /* yellow slider */
+}
+
+#speedValue {
+    font-size: 13px;
+    font-weight: bold;
+}
